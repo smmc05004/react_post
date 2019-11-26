@@ -41,6 +41,7 @@ const LoginForm = ({ history }) => {
     if (authError) {
       console.log('오류 발생');
       console.log(authError);
+      SetError('로그인 실패');
       return;
     }
     if (auth) {
